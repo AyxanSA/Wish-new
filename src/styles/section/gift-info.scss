@@ -1,0 +1,117 @@
+#gift-info {
+  h2 {
+    padding: 50px 0 10px 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4e4e4e;
+  }
+  .follower-items {
+      margin-top: 15px;
+     padding: 10px;
+    border-radius: 20px;
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+    .follower-info {
+        width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .follower-name {
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: #5929bb;
+        }
+        span {
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.25;
+          letter-spacing: normal;
+          text-align: left;
+          color: #4e4e4e;
+        }
+      }
+      .follower-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+     
+    } 
+    .follower-words{
+        padding: 0 10px ;
+        display: flex;
+        align-items: center;
+          p{
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.25;
+            letter-spacing: normal;
+            text-align: left;
+            color: #4e4e4e;
+          }
+          .heart{
+              height: 20px;
+              width: 25px;
+              margin-left: 55px;
+              svg{
+                  width: 100%;
+                  width: 100%;
+                  opacity: 0.5;
+              }
+          }
+      }
+      .follower-gift{
+          width: 175px;
+          position: relative;
+          &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0%;
+            width: 1px;
+            height: 100%;
+            border: 1px solid #bcbcbc;
+            transition: 0.3s ease-in-out;
+          }
+          p{
+            font-size: 22px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.27;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4e4e4e;
+          }
+      }
+  }
+}
+
+@media (max-width: 991.98px){
+  #gift-info{
+    .follower-items{
+      flex-direction: column;
+    }
+  }
+}
